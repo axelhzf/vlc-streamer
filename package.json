@@ -1,7 +1,7 @@
 {
   "name": "vlc-streamer",
   "version": "0.0.1",
-  "description": "Stream a magnet to vlc with subtitles",
+  "description": "Stream a torrent to vlc with subtitles",
   "license": "MIT",
   "repository": "",
   "dependencies": {

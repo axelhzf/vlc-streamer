@@ -1,6 +1,6 @@
 {
   "name": "vlc-streamer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Stream a torrent to vlc with subtitles",
   "license": "MIT",
   "repository": "git://github.com/axelhzf/vlc-streamer.git",

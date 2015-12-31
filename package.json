@@ -1,10 +1,11 @@
 {
   "name": "vlc-streamer",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Stream a torrent to vlc with subtitles",
   "license": "MIT",
-  "repository": "",
+  "repository": "git://github.com/axelhzf/vlc-streamer.git",
   "dependencies": {
+    "babel-runtime": "^6.3.19",
     "debug": "^2.2.0",
     "lodash": "^3.10.1",
     "peerflix": "^0.32.2",
@@ -15,16 +16,19 @@
     "vlc-streamer": "dist/cli.js"
   },
   "scripts": {
-    "build": "node_modules/.bin/babel lib --out-dir dist"
+    "build": "rm -rf dist; node_modules/.bin/babel lib --out-dir dist",
+    "prepublish": "npm run build"
   },
   "files": [
-    "dist/**/*"
+    "dist/*",
+    "README.md"
   ],
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-cli": "^6.3.17",
     "babel-plugin-syntax-async-functions": "^6.3.13",
     "babel-plugin-transform-async-to-generator": "^6.3.13",
+    "babel-plugin-transform-runtime": "^6.3.13",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-3": "^6.3.13"
   }
